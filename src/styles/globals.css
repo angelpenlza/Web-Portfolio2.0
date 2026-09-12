@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-container {
+    background-color: rgba(0, 36, 0, 0.4);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100;
+    align-items: center;
+
+}
+
+.homepage-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+
+
+}
+
+.homepage-name {
+    margin: 0;
+    color: rgb(221, 252, 221);
+    font-size: 50px;
+}
+
+.homepage-label {
+    color: rgb(192, 238, 192);
+    font-size: 25px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.homepage-bubble {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.main-bubble-one {
+    background-color: rgba(30, 84, 30, 0.3);
+    transform: translate(-80, -10);
+}
+
+.main-bubble-two {
+    background-color: rgba(0, 54, 0, 0.2);
+    transform: translate(80, 10);
+}
+
+.link-bubbles-container {
+    display: flex;
+    border: none;
+    width: 700px;
+    height: auto;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.homepage-link-bubble {
+    background-color: rgba(147, 253, 147, 0.75);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-link-bubble:first-child, 
+.homepage-link-bubble:last-child {
+    transform: translateY(-40);
+}
+ 
+.homepage-link {
+    text-decoration: none;
+    color: rgb(15, 46, 15);
+}
+
