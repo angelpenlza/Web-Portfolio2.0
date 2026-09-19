@@ -23,7 +23,6 @@ body {
     flex-direction: column;
     gap: 10;
 
-
 }
 
 .homepage-name {
@@ -78,8 +77,8 @@ body {
     align-items: center;
 }
 
-.homepage-link-bubble:first-child, 
-.homepage-link-bubble:last-child {
+.homepage-link:first-child, 
+.homepage-link:last-child {
     transform: translateY(-40);
 }
  

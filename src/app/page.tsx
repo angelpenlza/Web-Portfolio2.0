@@ -5,14 +5,14 @@ const LinkBubble = ({ src, name }: {
   name: string,
 }) => {
   return (
-    <div className="homepage-link-bubble">
-      <Link 
-        href={src} 
-        className="homepage-link"
-      >
+    <Link 
+      href={src} 
+      className="homepage-link"
+    >
+      <div className="homepage-link-bubble">
         {name}
-      </Link>
-    </div>
+      </div>
+    </Link>
   )
 }
 
