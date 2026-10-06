@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Alexandria } from 'next/font/google';
 import "../styles/globals.css";
+import "../styles/projects.css"
 
 export const metadata: Metadata = {
   title: "Angel's Portfolio",

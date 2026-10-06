@@ -2,11 +2,19 @@ body {
     background-color: rgb(25, 3, 25);
 }
 
-.gradient-page-title {
-    color: rgb(255, 228, 255);
+.projects-container {
+    background-color: rgb(40, 20, 40);
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.project-bubble-one {
-    background-color: pink;
+.project-elements {
+    align-self: center;
+    color: white;
+    z-index: 10;
+    border: solid;
+
 }
 
