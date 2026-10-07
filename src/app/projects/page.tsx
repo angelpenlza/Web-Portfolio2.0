@@ -57,11 +57,11 @@ export default function Project() {
     <BubblePage 
       header="Projects"
       subheader="Select a Project"
-      colorScheme="purple"
       links={[
         ['/projects/cora', 'Cora'], 
         ['/projects/wordle', 'Wordle Clone'],
       ]}
+      homeButton={true}
     />
   )
 }

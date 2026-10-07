@@ -16,20 +16,31 @@ const LinkBubble = ({ src, name }: {
   )
 }
 
-export default function BubblePage({ colorScheme, header, subheader, links }: {
-  colorScheme: string, 
+export default function BubblePage({ header, subheader, links, homeButton }: {
   header: string, 
   subheader: string, 
-  links: string[][]
+  links: string[][], 
+  homeButton: boolean,
 }) {
-  const linkBubbles: any = links.forEach((link) => {
+
+  const bubbles = links.map((link) => {
     return (
-      <div>Link: {link[0]} Name: {link[1]}</div>
+      <LinkBubble 
+        src={link[0]}
+        name={link[1]}
+        key={link[0]}
+      />
     )
   })
 
   return (
     <div className="homepage-container">
+      {
+        homeButton ? 
+        <Link href='/'>
+          <img src='/home.svg' alt="" className="home-button"/>
+        </Link> : <></>
+      }
       <div className="homepage-bubble main-bubble-one"></div>
       <div className="homepage-bubble main-bubble-two"></div>
 
@@ -39,11 +50,8 @@ export default function BubblePage({ colorScheme, header, subheader, links }: {
       </div>
 
       <div className="link-bubbles-container">
-        <LinkBubble src={links[0][0]} name={links[0][1]} />
-        <LinkBubble src={links[1][0]} name={links[1][1]} />
+        {bubbles}
       </div>
-
-
     </div>
   )
 }
