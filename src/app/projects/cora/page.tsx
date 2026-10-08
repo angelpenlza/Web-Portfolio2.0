@@ -13,11 +13,11 @@ export default function Cora() {
       `}
 
       imageLinks={[
-        '/cora/firstImage.png', 
-        '/cora/secondImage.png', 
-        '/cora/thirdImage.png', 
-        '/cora/fourthImage.png', 
-        '/cora/fifthImage.png'
+        'cora/firstImage.png', 
+        'cora/secondImage.png', 
+        'cora/thirdImage.png', 
+        'cora/fourthImage.png', 
+        'cora/fifthImage.png'
       ]}
 
       codeSnippet={
@@ -30,12 +30,12 @@ export default function Cora() {
       challengeDesc="Short description describing challenge."
 
       techStack={[
-        '/icons/react.svg', 
-        '/icons/html.svg',
-        '/icons/css.svg',
-        '/icons/database.svg',
-        '/icons/cloudflare.svg',
-        '/icons/vercel.svg'
+        'icons/react.svg', 
+        'icons/html.svg',
+        'icons/css.svg',
+        'icons/database.svg',
+        'icons/cloudflare.svg',
+        'icons/vercel.svg'
       ]}
       colorPalette="cora"
       darkFont={null}
