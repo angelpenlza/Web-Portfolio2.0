@@ -1,0 +1,51 @@
+/* Cora color palette */
+.cora-primary { background-color: #ff6d00; }
+.cora-secondary { background-color: #ff8500; }
+.cora-accent { background-color: #ff9e00; }
+.cora-light-font { color: white; }
+.cora-dark-font { color: rgb(54, 16, 0); }
+.cora-to-bottom-right-gradient {
+    background-image: linear-gradient(to bottom right, 
+    #e34000, 
+    #eb5e28,
+    #fc9145
+    );
+}
+.cora-to-bottom-gradient {
+    background-image: linear-gradient(to bottom,
+    #e34000, 
+    #ff8500
+    );
+}
+
+/* dreamy pastel palette */
+.dreamy-primary { background-color: #e1d7e1; }
+.dreamy-secondary { background-color: #ffd6ff; }
+.dreamy-accent { background-color: #8f7494; }
+.dreamy-light-font { color: #e1d7e1; }
+.dreamy-dark-font { color: #5c375d; }
+.dreamy-to-bottom-right-gradient {
+    background-image: linear-gradient(to bottom right, 
+    #c8b6ff,
+    #e7c6ff,
+    #ffd6ff
+    );
+}
+.dreamy-to-bottom-gradient {
+    background-image: linear-gradient(to bottom,
+    #c8b6ff,
+    #ffd6ff
+    );
+}
+
+/* glass morphism */
+.glass { 
+    background-image: linear-gradient(to bottom right, 
+        rgba(255, 255, 255, 40%), 
+        rgba(255, 255, 255, 20%),
+        rgba(255, 255, 255, 15%)
+    ); 
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}

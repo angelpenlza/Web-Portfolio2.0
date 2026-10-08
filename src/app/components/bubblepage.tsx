@@ -9,7 +9,7 @@ const LinkBubble = ({ src, name }: {
       href={src} 
       className="homepage-link"
     >
-      <div className="homepage-link-bubble">
+      <div className="homepage-link-bubble glass">
         {name}
       </div>
     </Link>
@@ -38,7 +38,7 @@ export default function BubblePage({ header, subheader, links, homeButton }: {
       {
         homeButton ? 
         <Link href='/'>
-          <img src='/home.svg' alt="" className="home-button"/>
+          <img src='/home.svg' alt="" className="home-button glass"/>
         </Link> : <></>
       }
       <div className="homepage-bubble main-bubble-one"></div>

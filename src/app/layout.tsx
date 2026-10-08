@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Alexandria } from 'next/font/google';
 import "../styles/globals.css";
 import "../styles/projects.css"
+import '../styles/bubbles.css'
+import '../styles/colors.css'
 
 export const metadata: Metadata = {
   title: "Angel's Portfolio",
@@ -15,7 +17,9 @@ const alexandria = Alexandria({
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={alexandria.className}>
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
