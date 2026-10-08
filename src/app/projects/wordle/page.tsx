@@ -8,15 +8,15 @@ export default function Wordle() {
         date="July 2025"
         desc="A replica of Wordle, a popular New York Times game."
         imageLinks={[
-          '/wordle/firstImage.png',
-          '/wordle/secondImage.png',
-          '/wordle/thirdImage.png',
+          '/Web-Portfolio2.0/wordle/firstImage.png',
+          '/Web-Portfolio2.0/wordle/secondImage.png',
+          '/Web-Portfolio2.0/wordle/thirdImage.png',
         ]}
         codeSnippet="test"
         challengeDesc="test"
         techStack={[
-          '/icons/react.svg',
-          '/icons/css.svg'
+          '/Web-Portfolio2.0/icons/react.svg',
+          '/Web-Portfolio2.0/icons/css.svg'
         ]}
         colorPalette="dreamy"
         darkFont='dreamy-dark-font'
