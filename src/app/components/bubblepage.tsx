@@ -38,7 +38,7 @@ export default function BubblePage({ header, subheader, links, homeButton }: {
       {
         homeButton ? 
         <Link href='/'>
-          <img src='/home.svg' alt="" className="home-button glass"/>
+          <img src='/Web-Portfolio2.0/home.svg' alt="" className="home-button glass"/>
         </Link> : <></>
       }
       <div className="homepage-bubble main-bubble-one"></div>

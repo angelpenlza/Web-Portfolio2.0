@@ -48,8 +48,8 @@ export function ProjectPage({
       <div className={`navbar ${colorPalette}-to-bottom-gradient`}>
         <h1 className="navbar-title">Portfolio / Projects</h1>
         <div className="space"></div>
-        <Link href='/'><img src='/home.svg' alt=""  className="icon" /></Link>
-        <img src='/menu.svg' alt="" className="icon" onClick={toggleMenu}>
+        <Link href='/'><img src='/Web-Portfolio2.0/home.svg' alt=""  className="icon" /></Link>
+        <img src='/Web-Portfolio2.0/menu.svg' alt="" className="icon" onClick={toggleMenu}>
         </img>
         { showMenu ? 
           <div className="menu">
