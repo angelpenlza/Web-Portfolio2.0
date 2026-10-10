@@ -12,7 +12,7 @@
     );
 }
 .cora-to-bottom-gradient {
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(to top,
     #e34000, 
     #ff8500
     );
@@ -32,11 +32,49 @@
     );
 }
 .dreamy-to-bottom-gradient {
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(to top,
     #c8b6ff,
     #ffd6ff
     );
 }
+
+/* summer fields */
+
+.summer-fields-primary { background-color: #fefae0; ;}
+.summer-fields-secondary { background-color: #ccd5ae; color: #754a20 }
+.summer-fields-accent { background-color: #fefae0;}
+.summer-fields-to-bottom-right-gradient {
+    background-image: linear-gradient(to bottom right,
+        #faedcd,
+        #d4a373
+    );
+}
+.summer-fields-to-bottom-gradient {
+    background-image: linear-gradient(to top,
+    #d4a373,
+    #fefae0
+    );
+}
+
+/* deep sea */
+.deep-sea-primary { background-color: #1b263b; }
+.deep-sea-secondary { background-color: #415a77; }
+.deep-sea-accent { background-color: #0d1b2a; }
+.deep-sea-to-bottom-gradient { 
+    background-image: linear-gradient(to top,
+        #0d1b2a,
+        #1b263b,
+        #415a77
+    );
+}
+.deep-sea-to-bottom-right-gradient {
+    background-image: linear-gradient(to bottom right,
+        #0d1b2a,
+        #1b263b,
+        #415a77
+    );
+}
+
 
 /* glass morphism */
 .glass { 
@@ -48,4 +86,5 @@
     border: solid;
     border-color: white;
     border-width: 1px;
+    backdrop-filter: blur(20px);
 }

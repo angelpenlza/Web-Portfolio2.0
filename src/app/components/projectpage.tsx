@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react"
+import { Navbar } from "./navbar";
 
 export function ProjectPage({ 
   header, subheader, date, desc, imageLinks, codeSnippet, challengeDesc, techStack, colorPalette, darkFont
@@ -19,9 +20,6 @@ export function ProjectPage({
   }) {
 
   const [imgIndex, setImgIndex] = useState(0);
-  const [showMenu, setShowMenu] = useState(false);
-  const toggleMenu = () => { setShowMenu(!showMenu) }
-
   const imageMenuButtons: any = [];
   const images = imageLinks.map((link, index) => {
     imageMenuButtons.push(
@@ -45,17 +43,7 @@ export function ProjectPage({
 
   return (
     <div className={`project-page-container ${colorPalette}-secondary ${darkFont}`}>
-      <div className={`navbar ${colorPalette}-to-bottom-gradient`}>
-        <h1 className="navbar-title">Portfolio / Projects</h1>
-        <div className="space"></div>
-        <Link href='/'><img src='/Web-Portfolio2.0/home.svg' alt=""  className="icon" /></Link>
-        <img src='/Web-Portfolio2.0/menu.svg' alt="" className="icon" onClick={toggleMenu}>
-        </img>
-        { showMenu ? 
-          <div className="menu">
-            {/* WORK IN PROGRESS */}
-          </div> : <></>}
-      </div>
+      <Navbar colorPalette={colorPalette} path="Projects" />
       <div className="project-body">
         <h1 className="project-header">{header}</h1>
         <h2 className="project-subheader">{subheader}</h2>
