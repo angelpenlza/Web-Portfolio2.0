@@ -39,7 +39,6 @@
 }
 
 /* summer fields */
-
 .summer-fields-primary { background-color: #fefae0; ;}
 .summer-fields-secondary { background-color: #ccd5ae; color: #754a20 }
 .summer-fields-accent { background-color: #fefae0;}
@@ -57,11 +56,11 @@
 }
 
 /* deep sea */
-.deep-sea-primary { background-color: #1b263b; }
+.deep-sea-primary { background-color: #0d1b2a; }
 .deep-sea-secondary { background-color: #415a77; }
-.deep-sea-accent { background-color: #0d1b2a; }
+.deep-sea-accent { background-color: #1b263b; }
 .deep-sea-to-bottom-gradient { 
-    background-image: linear-gradient(to top,
+    background-image: linear-gradient(to bottom,
         #0d1b2a,
         #1b263b,
         #415a77
@@ -72,6 +71,25 @@
         #0d1b2a,
         #1b263b,
         #415a77
+    );
+}
+
+/* earthy forest */
+.earthy-forest-primary { background-color: #3a5a40; }
+.earthy-forest-secondary { background-color: #344e41; }
+.earthy-forest-accent { background-color: #588157; }
+.earthy-forest-to-bottom-gradient { 
+    background-image: linear-gradient(to bottom,
+        #344e41,
+        #3a5a40,
+        #588157
+    );
+}
+.earthy-forest-to-bottom-right-gradient { 
+    background-image: linear-gradient(to bottom right,
+        #344e41,
+        #3a5a40,
+        #588157
     );
 }
 

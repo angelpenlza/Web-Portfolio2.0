@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import "../styles/projects.css"
 import '../styles/bubbles.css'
 import '../styles/colors.css'
+import '../styles/about.css'
 
 export const metadata: Metadata = {
   title: "Angel's Portfolio",
