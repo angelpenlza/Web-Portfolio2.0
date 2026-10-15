@@ -77,7 +77,7 @@ body {
 .link-bubbles-container {
     display: flex;
     border: none;
-    width: 700px;
+    width: 400px;
     height: auto;
     justify-content: space-evenly;
     padding: 0;
