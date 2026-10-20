@@ -1,8 +1,9 @@
 'use client'
 
 import Link from "next/link";
-import { useState } from "react"
+import { useCallback, useState } from "react"
 import { Navbar } from "./navbar";
+import Swiper from "./swiper";
 
 export function ProjectPage({ 
   header, subheader, date, desc, imageLinks, codeSnippet, challengeDesc, techStack, colorPalette, darkFont
@@ -32,6 +33,16 @@ export function ProjectPage({
     return <img src={link} alt="" key={index} className="image"/>
   })
 
+  const leftImage = () => { 
+    if(imgIndex <= 0) setImgIndex(imageLinks.length - 1); 
+    else setImgIndex(imgIndex - 1);
+  }
+
+  const rightImage = () => {
+    if(imgIndex >= imageLinks.length - 1) setImgIndex(0);
+    else setImgIndex(imgIndex + 1);
+  }
+
   const stack = techStack.map((icon) => {
     return <img 
       src={icon} 
@@ -40,6 +51,15 @@ export function ProjectPage({
       className={`${colorPalette}-to-bottom-right-gradient stack`}
     />
   })
+
+  const handleSwipe = ({deltaX, deltaY}: 
+    { deltaX : number, deltaY: number }) => {
+      console.log('swipe handled')
+      if(Math.abs(deltaX) > Math.abs(deltaY)) {
+        if(deltaX > 0) rightImage();
+        else leftImage();
+      }
+  }
 
   return (
     <div className={`project-page-container ${colorPalette}-secondary ${darkFont}`}>
@@ -55,12 +75,16 @@ export function ProjectPage({
           <h2 className="stack-title">Tech Stack</h2>
           { stack }
         </div>
-        <div className={`project-images-container ${colorPalette}-to-bottom-right-gradient`}>
+        <div 
+          className={`project-images-container ${colorPalette}-to-bottom-right-gradient`}
+        >
           <h2>A quick glance</h2>
           { images[imgIndex] }
           <div className="img-menu">{imageMenuButtons}</div>
         </div>
-
+        <Swiper onSwipe={handleSwipe}>
+          <div></div>
+        </Swiper>
         {/* 
         WORK IN PROGRESS
         <code>{codeSnippet}</code>
