@@ -82,9 +82,7 @@ export function ProjectPage({
           { images[imgIndex] }
           <div className="img-menu">{imageMenuButtons}</div>
         </div>
-        <Swiper onSwipe={handleSwipe}>
-          <div></div>
-        </Swiper>
+
         {/* 
         WORK IN PROGRESS
         <code>{codeSnippet}</code>
