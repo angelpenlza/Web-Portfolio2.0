@@ -22,7 +22,6 @@ export default function BubblePage({ header, subheader, links, homeButton }: {
   links: string[][], 
   homeButton: boolean,
 }) {
-
   const bubbles = links.map((link) => {
     return (
       <LinkBubble 
